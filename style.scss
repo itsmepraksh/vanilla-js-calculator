@@ -124,10 +124,14 @@ body{
                     .enter{
                         @include keys;
                         aspect-ratio: 0;
-                        width: 75%;
+                        width: 50%;
 
                     }
                     .dot{
+                        width: 25%;
+                        @include keys;
+                    }
+                    .zero{
                         width: 25%;
                         @include keys;
                     }
