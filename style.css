@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body main .calci {
+  width: 61%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+body main .calci .part1 {
+  width: 100%;
+  aspect-ratio: 2/1;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+}
+body main .calci .part1 h1 {
+  width: 100%;
+  text-align: right;
+}
+body main .calci .part1 .truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body main .calci .part2 {
+  width: 100%;
+  background-color: #B8F3D7;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-areas: "a c" "b c" "d d";
+  gap: 0.25rem;
+}
+body main .calci .part2 .upper-op {
+  grid-area: a;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.25rem;
+}
+body main .calci .part2 .upper-op .key {
+  flex-shrink: 0;
+  border: 1px solid rgb(22, 22, 22);
+  width: 3rem;
+  aspect-ratio: 1/1;
+  padding: 1rem;
+  border-radius: 5px;
+}
+body main .calci .part2 .nums {
+  grid-area: b;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+body main .calci .part2 .nums .key {
+  flex-shrink: 0;
+  border: 1px solid rgb(22, 22, 22);
+  width: 3rem;
+  aspect-ratio: 1/1;
+  padding: 1rem;
+  border-radius: 5px;
+}
+body main .calci .part2 .opr {
+  grid-area: c;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+body main .calci .part2 .opr .key {
+  flex-shrink: 0;
+  border: 1px solid rgb(22, 22, 22);
+  width: 3rem;
+  aspect-ratio: 1/1;
+  padding: 1rem;
+  border-radius: 5px;
+}
+body main .calci .part2 .bottom {
+  grid-area: d;
+  display: flex;
+  gap: 0.25rem;
+}
+body main .calci .part2 .bottom .enter {
+  flex-shrink: 0;
+  border: 1px solid rgb(22, 22, 22);
+  width: 3rem;
+  aspect-ratio: 1/1;
+  padding: 1rem;
+  border-radius: 5px;
+  aspect-ratio: 0;
+  width: 75%;
+}
+body main .calci .part2 .bottom .dot {
+  width: 25%;
+  flex-shrink: 0;
+  border: 1px solid rgb(22, 22, 22);
+  width: 3rem;
+  aspect-ratio: 1/1;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  body main .calci {
+    width: 29%;
+  }
+}
+@media (min-width: 1024px) {
+  body main .calci {
+    width: 22%;
+  }
+}
+@media (min-width: 1300px) {
+  body main .calci {
+    width: 13%;
+  }
+}/*# sourceMappingURL=style.css.map */
